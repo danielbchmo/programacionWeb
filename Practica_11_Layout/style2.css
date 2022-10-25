@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    color: tomato;
+}
+
+div {
+    border: 2px solid;
+    position: relative;
+}
+
+img {
+    float: left;
+    width: 100px;
+}
+
+form {
+    text-align: right;
+}
+
+.nav {
+    padding-top: 15px;
+    padding-left: 15px;
+    background-color: blue;
+    height: 50px;
+}
+
+.nav a {
+    color: aliceblue;
+}
+
+.header {
+    border: hidden;
+    color: tomato;
+    padding-left: 30px;
+}
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
+    border: hidden;
+}
+
+.column1 {
+    background-color: lightgray;
+    margin-top: 5px;
+    float: left;
+    width: 20%;
+    padding: 15px;
+}
+
+.column2 {
+    float: left; 
+    width: 60%;
+    padding: 15px;
+    border: hidden;
+    text-align: justify;
+}
+
+.column2 a {
+    color: tomato
+}
+
+.column3 {
+    border-color: tomato;
+    margin-top: 5px;
+    float: left;
+    width: 20%;
+    padding: 15px;
+}
+
+.column3 h3 {
+    background-color: tomato;
+    color: white;
+    text-align: center;
+}
+
+.footer {
+    background-color: lightgrey;
+    margin-top: 15px;
+    height: 50px;
+    padding: 15px;
+}
+

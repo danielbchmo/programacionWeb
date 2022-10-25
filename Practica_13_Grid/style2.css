@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    width: auto;
+    height: 500px;
+    background-color: grey;
+    padding: 50px;
+    grid-template-columns: auto auto auto;
+    font-size: 50px;
+    text-align: center;
+    color: whitesmoke;
+
+    grid-template-areas: 
+        'uno dos dos'
+        'uno tres cuatro'
+        'uno cinco cinco';
+    /* column-gap: auto;
+    row-gap: auto; */
+}
+
+.container div {
+    background-color: aqua;
+    margin: 10px;
+    padding: 20px;
+}
+
+.box1 {
+    grid-area: uno;
+}
+
+.box2 {
+
+    grid-area: dos;
+}
+
+.box3 {
+
+    grid-area: tres;
+}
+
+.box4 {
+
+    grid-area: cuatro;
+}
+
+.box5 {
+ 
+    grid-area: cinco;
+}
+
+/* .box1 {
+    background-color: lightcoral;
+    width: auto;
+    line-height: 75px;
+    font-size: 50px;
+    margin-right: 5%; 
+} */
+
+/* .box2 {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: auto;
+} */

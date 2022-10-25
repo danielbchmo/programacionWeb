@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    background-color: aqua;
+}
+
+.contenedor {
+    border: solid #333;
+    padding: 10px;
+    float: right;
+}
+
+.techo {
+    border: solid;
+    width: 500px;
+    height: 70px;
+    background-color: red;
+}
+
+.casa {
+    border: solid;
+    margin-left: 15px;
+    width: 470px;
+    height: 300px;
+    background-color: grey;
+}
+
+.ven1 {
+    border: solid;  
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 100px;
+    height: 70px;
+    background-color: blue;
+}
+
+.ven2 {
+    border: solid;
+    margin-top: 30px;
+    margin-left: 300px;
+    width: 100px;
+    height: 70px;
+    background-color: blue;
+}
+
+.puerta {
+        border: solid;
+        margin-top: -25px;
+        margin-left: 170px;
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+}

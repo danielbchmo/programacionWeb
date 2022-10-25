@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* .container {
+    padding: 10px;
+    border: dotted;
+    text-align: center;
+} */
+
+header {
+    border: solid red;
+    margin-bottom: 5px;
+    background-color: beige;
+}
+
+.caja2 {
+    float: left;
+    border: solid blue;
+    height: 400px;
+    background-color: beige;
+    width: 95px;
+    position: relative;
+}
+
+.caja3 {
+    /* float: left; */
+    margin-left: 100px;
+    border: solid green;
+    height: 500px;
+    background-color: beige;
+    overflow: hidden;
+}
+
+footer {
+    margin-top: 5px;
+    border: solid yellow;
+    background-color: beige;
+    height: 60px;
+    clear: left;
+}

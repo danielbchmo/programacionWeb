@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+table {
+  text-align: center;
+  overflow: hidden;
+  /* display: inline-block; */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* tr:nth-child(even) {
+  background-color: #999;
+} */
+
+td,
+th {
+  padding: 10px;
+  position: relative;
+}
+
+th {
+  background-color: cyan;
+}
+
+/*Row*/
+td:hover::before {
+  background-color: aquamarine;
+  content: "";
+  height: 100%;
+  left: -5000px;
+  position: absolute;
+  top: 0;
+  width: 10000px;
+  z-index: -2; /* no esconde los valores de fondo */
+}
+
+/*Column*/
+td:hover::after { 
+  background-color: aquamarine;
+  content: "";
+  height: 10000px;
+  left: 0;
+  position: absolute;
+  top: -5000px;
+  width: 100%;
+  z-index: -1;
+}
+
+/*table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+tr:nth-child(even) {
+    background-color: aqua;
+}
+
+tr:hover {
+    background-color: blue;
+    
+        
+}
+
+td:hover {
+    position: absolute;
+    background-color: blue;
+    
+    
+    
+}
+
+td:hover::after { 
+    background-color: blue;
+    content: '';  
+    height: 10000px;    
+    left: 0;
+    position: absolute;  
+    top: -5000px;
+    width: 100%;
+    z-index: -1;        
+}
+
+td::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}*/

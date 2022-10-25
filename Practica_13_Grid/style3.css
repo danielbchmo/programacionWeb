@@ -1,0 +1,57 @@
+.grid-c {
+    display:grid;
+    background-color: pink;
+    height: 500px;
+    padding: 20px;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100px 100px 200px;
+    justify-content: center;
+    grid-template-areas: 
+      'enc enc enc'
+      'ads main main'
+      'ads main main'
+      'pie pie pie';
+    column-gap: 10px;
+    row-gap: 15px;
+    font-size: 30px;
+  }
+  
+  .grid-c div {
+    text-align: center;
+    color: black;
+    padding: 10px;
+    border: 1px solid black;
+    
+  }
+  
+  /*cambiar grid template col a auto y comentar row y padding*/
+  .item1 { 
+    background-color: green;
+    grid-area: enc;
+  }
+  
+  .item2 {
+    background-color: brown;
+    grid-area: ads;  
+  }
+
+  .item3 {
+    background-color: orange;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    align-content: end;
+  }
+
+  .item3 div {
+    background-color: cadetblue;
+    margin: 10px;
+  }
+
+  .item3 {
+    grid-area: main;  
+  }
+
+  .item4 {
+    background-color: green;
+    grid-area: pie;  
+  }
