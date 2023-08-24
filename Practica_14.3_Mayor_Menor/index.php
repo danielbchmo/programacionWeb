@@ -36,12 +36,14 @@
         <button type="submit" name="add">Agregar</button>
     </form>
 
-    <h3>Numeros ingresados: </h3>
     <?php 
-    foreach($numbers as $value){
-        echo $value.', ';
-    }?>
-    <h3><?php echo 'Numero mayor es: '; ?></h3><?php echo max($numbers);?>
-    <h3><?php echo 'Numero menor es: '; ?></h3><?php echo min($numbers);?>
+    if($_POST){
+        echo '<h3>Numeros ingresados: </h3>';
+        foreach($numbers as $value){
+            echo $value.', ';
+        }?>
+        <h3><?php echo 'Numero mayor es: '; ?></h3><?php echo max($numbers);?>
+        <h3><?php echo 'Numero menor es: '; ?></h3><?php echo min($numbers);?>
+    <?php } ?>
 </body>
 </html>
