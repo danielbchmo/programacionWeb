@@ -25,27 +25,26 @@
     if($_POST){
         $col = $_POST['col'];
         $row = $_POST['row'];
-        // LINEA SUPERIOR
-        for($i=0;$i<=$col-2;$i++){
-            echo '*';
-        }
-        echo '<br>';
-
-        //CENTRO 
-        for($i=0;$i<=$row-2;$i++){
-            echo '*';
-            for($j=0;$j<=$col-4;$j++){
-                //echo str_repeat('&nbsp;',$row-5);
-                echo "_";
+        for($i=0;$i<=$col-1;$i++){
+                echo '*';
             }
-            echo '*<br>';   
-            // echo '*';
-        }
-        
-        //LINEA INFERIOR
-         for($i=0;$i<=$col-2;$i++){
-             echo '*';
-        }
+            echo '<br>';
+    
+            //CENTRO 
+            for($i=0;$i<=$row-3;$i++){
+                echo '*';
+                for($j=1;$j<=$col-2;$j++){
+                    //echo str_repeat('&nbsp;',$row-5);
+                    echo '&nbsp ';
+                }
+                echo '*<br>';   
+                // echo '*';
+            }
+            
+            //LINEA INFERIOR
+             for($i=0;$i<=$col-1;$i++){
+                 echo '*';
+            }
     }
 
     ?>
