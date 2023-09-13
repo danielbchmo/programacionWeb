@@ -1,9 +1,9 @@
 <?php
 
 $host="localhost";
-$db="id19465532_mini_siiau";
-$usuario="id19465532_oscar";
-$contrasenia="Musica_mosso1976";
+$db="mini_siiau";
+$usuario="";
+$contrasenia="";
 
 try {
     $conexion=new PDO ("mysql:host=$host;dbname=$db",$usuario,$contrasenia);
